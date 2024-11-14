@@ -22,11 +22,7 @@ name= 'mlproject',
 version= '2.1.0',
 author='keerti',
 author_email='keertivijayananth06@gmail.com',
- packages=find_packages(),
-    install_requires=[
-        "numpy>=1.21.0",  # Replace with actual dependencies
-        "pandas>=1.3.0"
-    ],
-
+packages=find_packages(),
+install_requires=get_requirements('requirements.txt')
 
 )
